@@ -78,22 +78,18 @@ class Employee:
 
 # Billie works on a monthly salary of 4000.  Their total pay is 4000.
 billie = Employee("Billie", MonthlySalaryBuilder(4000))
-print(billie)
 
 # Charlie works on a contract of 100 hours at 25/hour.  Their total pay is 2500.
 charlie = Employee("Charlie", HourlySalaryBuilder(100, 25))
-print(charlie)
 
 # Renee works on a monthly salary of 3000 and receives a commission for 4 contract(s) at 200/contract.  Their total pay is 3800.
 renee = Employee("Renee", MonthlySalaryBuilder(3000), ContractCommissionBuilder(4, 200))
-print(renee)
 
 # Jan works on a contract of 150 hours at 25/hour and receives a commission for 3 contract(s) at 220/contract.  Their total pay is 4410.
 jan = Employee("Jan", HourlySalaryBuilder(150, 25), ContractCommissionBuilder(3, 220))
-print(jan)
+
 # Robbie works on a monthly salary of 2000 and receives a bonus commission of 1500.  Their total pay is 3500.
 robbie = Employee("Robbie", MonthlySalaryBuilder(2000), BonusCommissionBuilder(1500))
-print(robbie)
+
 # Ariel works on a contract of 120 hours at 30/hour and receives a bonus commission of 600.  Their total pay is 4200.
 ariel = Employee("Ariel", HourlySalaryBuilder(120, 30), BonusCommissionBuilder(600))
-print(ariel)
